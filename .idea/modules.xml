@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sf-fetch-greco-api-master.iml" filepath="$PROJECT_DIR$/.idea/sf-fetch-greco-api-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sf-mna-fetch-greco-api.iml" filepath="$PROJECT_DIR$/.idea/sf-mna-fetch-greco-api.iml" />
     </modules>
   </component>
 </project>
