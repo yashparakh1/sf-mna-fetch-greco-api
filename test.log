@@ -1,0 +1,42 @@
+2023-03-07 11:32:38,694 Event received:
+{'httpMethod': 'POST', 'path': '/mna/search_greco_data', 'body': '{"table": "greco_3rd_party_sick_pay_report", "sort": {"id": "Ascending"}}'}
+2023-03-07 11:32:38,694 httpMethod: POST
+path: /mna/search_greco_data
+2023-03-07 11:32:38,694 queryStringParameters is empty; setting default page_no and page_size values
+2023-03-07 11:32:38,694 page_no: 1
+page_size: 20
+2023-03-07 11:32:38,694 body: {'table': 'greco_3rd_party_sick_pay_report', 'sort': {'id': 'Ascending'}}
+2023-03-07 11:32:38,694 Invoking 'search_greco_data' function
+2023-03-07 11:32:38,973 athena_client created successfully
+2023-03-07 11:32:38,973 Building the query
+2023-03-07 11:32:38,973 select_query initialized
+2023-03-07 11:32:38,975 Count query built: SELECT COUNT(*) FROM greco_3rd_party_sick_pay_report
+2023-03-07 11:32:38,975 None
+2023-03-07 11:32:38,975 Building 'ORDER BY' clause
+2023-03-07 11:32:38,975 Column: id; Order: ASC
+2023-03-07 11:32:38,975 'ORDER BY' clause built
+2023-03-07 11:32:38,975 Building 'PAGING' clause
+2023-03-07 11:32:38,975 'PAGING' clause built
+2023-03-07 11:32:38,975 Select query built: SELECT "employee","id","location","check_date","earnings","nt_earnings","lt_earnings","social_sec","medicare","other_taxes","net" FROM greco_3rd_party_sick_pay_report ORDER BY CAST("id" as int) ASC OFFSET 0 ROWS LIMIT 20
+2023-03-07 11:32:38,975 Time taken: 0.00s
+2023-03-07 11:32:38,975 Initializing query execution for the query:
+SELECT COUNT(*) FROM greco_3rd_party_sick_pay_report
+2023-03-07 11:32:40,262 Initialized query execution; Time taken: 1.29s
+2023-03-07 11:32:40,262 Checking query execution
+2023-03-07 11:32:40,544 attempt-1: state = RUNNING
+2023-03-07 11:32:41,840 attempt-2: state = SUCCEEDED
+2023-03-07 11:32:41,840 Getting results
+2023-03-07 11:32:42,186 Fetched results successfully; Time taken: 0.35s
+2023-03-07 11:32:42,186 count=249
+2023-03-07 11:32:42,186 Initializing query execution for the query:
+SELECT "employee","id","location","check_date","earnings","nt_earnings","lt_earnings","social_sec","medicare","other_taxes","net" FROM greco_3rd_party_sick_pay_report ORDER BY CAST("id" as int) ASC OFFSET 0 ROWS LIMIT 20
+2023-03-07 11:32:42,525 Initialized query execution; Time taken: 0.34s
+2023-03-07 11:32:42,525 Checking query execution
+2023-03-07 11:32:42,843 attempt-1: state = RUNNING
+2023-03-07 11:32:44,154 attempt-2: state = SUCCEEDED
+2023-03-07 11:32:44,154 Getting results
+2023-03-07 11:32:44,518 Fetched results successfully; Time taken: 0.36s
+2023-03-07 11:32:44,519 Reformatting the response.json from AWS Athena
+2023-03-07 11:32:44,523 Reformatted response.json successfully; Time taken: 0.00s
+2023-03-07 11:32:44,523 Search function execution completed; Status: 200; Time taken: 5.83s
+2023-03-07 11:32:44,525 Lambda execution duration: 5.83s

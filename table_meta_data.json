@@ -1,0 +1,990 @@
+{
+    "greco_3rd_party_sick_pay_report": {
+        "columns": [
+            "employee",
+            "id",
+            "location",
+            "check_date",
+            "earnings",
+            "nt_earnings",
+            "lt_earnings",
+            "social_sec",
+            "medicare",
+            "other_taxes",
+            "net"
+        ],
+        "exact_match": [
+            "id",
+            "location",
+            "lt_earnings"
+        ],
+        "timestamp": [
+            "check_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id",
+            "location",
+            "lt_earnings"
+        ]
+    },
+    "greco_401k_census": {
+        "columns": [
+            "co",
+            "id",
+            "last_name",
+            "first_name",
+            "m",
+            "ssn",
+            "sex",
+            "birthdate",
+            "hiredate",
+            "rehiredate",
+            "termdate",
+            "marital_status",
+            "address_1",
+            "address_2",
+            "city",
+            "state",
+            "zip",
+            "emp_status",
+            "union_code",
+            "er_pre",
+            "er_post",
+            "ee_pre",
+            "ee_post",
+            "loan_1",
+            "loan_2",
+            "loan_3",
+            "loan_4",
+            "loan_5",
+            "loan_6",
+            "loan_7",
+            "loan_8",
+            "loan_9",
+            "hours",
+            "gross",
+            "ytd_er_pre",
+            "ytd_er_post",
+            "ytd_ee_pre",
+            "ytd_ee_post",
+            "ytd_loan_1",
+            "ytd_loan_2",
+            "ytd_load_3",
+            "ytd_loan_4",
+            "ytd_loan_5",
+            "ytd_loan_6",
+            "ytd_loan_7",
+            "ytd_loan_8",
+            "ytd_loan_9",
+            "ytd_hours",
+            "ytd_gross"
+        ],
+        "exact_match": [
+            "co",
+            "id",
+            "last_name",
+            "first_name",
+            "m",
+            "ssn",
+            "sex",
+            "birthdate",
+            "hiredate",
+            "rehiredate",
+            "termdate",
+            "marital_status",
+            "address_1",
+            "address_2",
+            "city",
+            "state",
+            "zip",
+            "emp_status",
+            "union_code",
+            "er_pre",
+            "er_post",
+            "ee_pre",
+            "ee_post",
+            "loan_1",
+            "loan_2",
+            "loan_3",
+            "loan_4",
+            "loan_5",
+            "loan_6",
+            "loan_7",
+            "loan_8",
+            "loan_9",
+            "hours",
+            "gross",
+            "ytd_er_pre",
+            "ytd_er_post",
+            "ytd_ee_pre",
+            "ytd_ee_post",
+            "ytd_loan_1",
+            "ytd_loan_2",
+            "ytd_load_3",
+            "ytd_loan_4",
+            "ytd_loan_5",
+            "ytd_loan_6",
+            "ytd_loan_7",
+            "ytd_loan_8",
+            "ytd_loan_9",
+            "ytd_hours",
+            "ytd_gross"
+        ],
+        "timestamp": [
+            "birthdate",
+            "hiredate",
+            "rehiredate",
+            "termdate"
+        ],
+        "date_range": [],
+        "ints": [
+            "co",
+            "id",
+            "last_name",
+            "first_name",
+            "m",
+            "ssn",
+            "sex",
+            "birthdate",
+            "hiredate",
+            "rehiredate",
+            "termdate",
+            "marital_status",
+            "address_1",
+            "address_2",
+            "city",
+            "state",
+            "zip",
+            "emp_status",
+            "union_code",
+            "er_pre",
+            "er_post",
+            "ee_pre",
+            "ee_post",
+            "loan_1",
+            "loan_2",
+            "loan_3",
+            "loan_4",
+            "loan_5",
+            "loan_6",
+            "loan_7",
+            "loan_8",
+            "loan_9",
+            "hours",
+            "gross",
+            "ytd_er_pre",
+            "ytd_er_post",
+            "ytd_ee_pre",
+            "ytd_ee_post",
+            "ytd_loan_1",
+            "ytd_loan_2",
+            "ytd_load_3",
+            "ytd_loan_4",
+            "ytd_loan_5",
+            "ytd_loan_6",
+            "ytd_loan_7",
+            "ytd_loan_8",
+            "ytd_loan_9",
+            "ytd_hours",
+            "ytd_gross"
+        ]
+    },
+    "greco_accrual_balance": {
+        "columns": [
+            "id",
+            "employee",
+            "rate",
+            "length_of_service",
+            "code",
+            "accrual_rate",
+            "start_date",
+            "hours_used",
+            "hours_available",
+            "days_used",
+            "days_available"
+        ],
+        "exact_match": [
+            "id",
+            "employee",
+            "rate",
+            "length_of_service",
+            "code",
+            "accrual_rate",
+            "start_date",
+            "hours_used",
+            "hours_available",
+            "days_used",
+            "days_available"
+        ],
+        "timestamp": [
+            "start_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id",
+            "employee",
+            "rate",
+            "length_of_service",
+            "code",
+            "accrual_rate",
+            "start_date",
+            "hours_used",
+            "hours_available",
+            "days_used",
+            "days_available"
+        ]
+    },
+    "greco_anniversary_report": {
+        "columns": [
+            "id",
+            "employee",
+            "hire_date",
+            "rehire_date",
+            "adj_seniority",
+            "seniority",
+            "pay_rate",
+            "address_1",
+            "address_2",
+            "city",
+            "zip"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [
+            "hire_date",
+            "rehire_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_annual_salary_report": {
+        "columns": [
+            "employee_id",
+            "last_name",
+            "preferred_first_name",
+            "hire_date",
+            "base_rate",
+            "per_unit",
+            "pay_type_code",
+            "per_check_salary",
+            "annual_salary"
+        ],
+        "exact_match": [
+            "employee_id"
+        ],
+        "timestamp": [
+            "hire_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "employee_id"
+        ]
+    },
+    "greco_average_salary_by_ethnic_and_racial_identity_report": {
+        "columns": [
+            "position_description",
+            "ethnic_racial_identity",
+            "average_of_annual_salary",
+            "average_of_base_rate",
+            "count_of_employee_id",
+            "count_of_last_name",
+            "count_of_preferred_first_name",
+            "count_of_employment_type_description",
+            "count_of_tenure"
+        ],
+        "exact_match": [
+            "count_of_employee_id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "count_of_employee_id"
+        ]
+    },
+    "greco_average_salary_by_gender_identity_report": {
+        "columns": [
+            "position_description",
+            "gender_identity",
+            "average_of_annual_salary",
+            "average_of_base_rate",
+            "count_of_last_name",
+            "count_of_preferred_first_name",
+            "count_of_employment_type_description",
+            "count_of_tenure"
+        ],
+        "exact_match": [],
+        "timestamp": [],
+        "date_range": [],
+        "ints": []
+    },
+    "greco_average_salary_by_gender_report": {
+        "columns": [
+            "position_description",
+            "gender_legal",
+            "average_of_annual_salary",
+            "average_of_base_rate",
+            "count_of_last_name",
+            "count_of_preferred_first_name",
+            "count_of_employment_type_description",
+            "count_of_tenure"
+        ],
+        "exact_match": [],
+        "timestamp": [],
+        "date_range": [],
+        "ints": []
+    },
+    "greco_average_salary_by_generation_report": {
+        "columns": [
+            "position_description",
+            "generation_name",
+            "average_of_annual_salary",
+            "average_of_base_rate",
+            "count_of_employee_id",
+            "count_of_preferred_first_name",
+            "count_of_last_name"
+        ],
+        "exact_match": [
+            "count_of_employee_id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "count_of_employee_id"
+        ]
+    },
+    "greco_average_salary_by_position_report": {
+        "columns": [
+            "position_description",
+            "count_of_company_code",
+            "count_of_employee_id",
+            "count_of_last_name",
+            "count_of_preferred_first_name",
+            "count_of_department_description",
+            "average_of_annual_salary",
+            "average_of_base_rate",
+            "count_of_employment_type_description",
+            "average_of_tenure_in_months"
+        ],
+        "exact_match": [
+            "count_of_company_code",
+            "count_of_employee_id",
+            "average_of_tenure_in_months"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "count_of_company_code",
+            "count_of_employee_id",
+            "average_of_tenure_in_months"
+        ]
+    },
+    "greco_benefits_reconciliation_report": {
+        "columns": [
+            "employee",
+            "id",
+            "status",
+            "title"
+        ],
+        "exact_match": [
+            "employee",
+            "id",
+            "status",
+            "title"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "employee",
+            "id",
+            "status",
+            "title"
+        ]
+    },
+    "greco_birthday_listing_report": {
+        "columns": [
+            "id",
+            "employee",
+            "birthday",
+            "address_1",
+            "address_2",
+            "city",
+            "state",
+            "zip_code"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_check_register_report": {
+        "columns": [
+            "employee_id",
+            "employee_name",
+            "net_amount"
+        ],
+        "exact_match": [
+            "employee_id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "employee_id"
+        ]
+    },
+    "greco_completed_training_by_employee_report": {
+        "columns": [
+            "employee_id",
+            "count_of_company_code",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "count_of_training_title",
+            "count_of_training_type",
+            "summation_of_score",
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_first_accessed",
+            "maximum_of_last_accessed",
+            "maximum_of_due_date",
+            "maximum_of_completed_date",
+            "maximum_of_updated_on",
+            "summation_of_duration_minutes",
+            "summation_of_total_time_seconds",
+            "count_of_category_1",
+            "count_of_category_2",
+            "count_of_category_3",
+            "count_of_category_4",
+            "count_of_category_5"
+        ],
+        "exact_match": [
+            "employee_id",
+            "count_of_company_code"
+        ],
+        "timestamp": [
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_due_date",
+            "maximum_of_completed_date",
+            "maximum_of_updated_on"
+        ],
+        "date_range": [],
+        "ints": [
+            "employee_id",
+            "count_of_company_code"
+        ]
+    },
+    "greco_completed_training_by_training_title_report": {
+        "columns": [
+            "training_title",
+            "count_of_training_type",
+            "count_of_company_code",
+            "count_of_employee_id",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "summation_of_score",
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_first_accessed",
+            "maximum_of_last_accessed",
+            "maximum_of_due_date",
+            "maximum_of_completed_date",
+            "maximum_of_updated_on",
+            "summation_of_duration_minutes",
+            "summation_of_total_time_seconds",
+            "count_of_category_1",
+            "count_of_category_2",
+            "count_of_category_3",
+            "count_of_category_4",
+            "count_of_category_5"
+        ],
+        "exact_match": [
+            "count_of_company_code",
+            "count_of_employee_id"
+        ],
+        "timestamp": [
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_due_date",
+            "maximum_of_completed_date",
+            "maximum_of_updated_on"
+        ],
+        "date_range": [],
+        "ints": [
+            "count_of_company_code",
+            "count_of_employee_id"
+        ]
+    },
+    "greco_comprehensive_demographic_report": {
+        "columns": [
+            "employee_id",
+            "paylocity_company_code",
+            "ssn",
+            "first_name",
+            "middle_initial",
+            "last_name",
+            "address_1",
+            "address_2",
+            "city",
+            "state",
+            "postal",
+            "county",
+            "birth_date",
+            "hire_date",
+            "adjusted_seniority_date",
+            "rehire_date",
+            "employment_term_date",
+            "term_reason",
+            "employee_status",
+            "employee_type_description",
+            "gender",
+            "marital_status",
+            "home_phone",
+            "personal_email",
+            "mobile_phone",
+            "work_phone",
+            "work_email",
+            "work_location_name",
+            "job_title",
+            "position_code",
+            "position_description",
+            "cost_center_1",
+            "cost_center_1_description",
+            "cost_center_2",
+            "cost_center_2_description",
+            "cost_center_3",
+            "cost_center_3_description",
+            "ethnicity",
+            "eeo_class",
+            "pay_group_code",
+            "pay_frequency",
+            "hourly_or_salary",
+            "annual_salary",
+            "hourly_rate",
+            "pay_rate_effective_date",
+            "default_hours",
+            "highly_compensated",
+            "benefit_class_code",
+            "benefit_class_description",
+            "benefit_class_effective_date",
+            "benefit_override_salary",
+            "benefit_salary",
+            "benefit_salary_effective_date",
+            "benefit_hours_per_week",
+            "benefit_location",
+            "benefit_division",
+            "benefit_termination_date",
+            "badge_number_or_clock_number",
+            "web_time_badge_number",
+            "enable_time_and_labor",
+            "eligible_for_rehire"
+        ],
+        "exact_match": [
+            "employee_id",
+            "paylocity_company_code",
+            "cost_center_1"
+        ],
+        "timestamp": [
+            "birth_date",
+            "hire_date",
+            "adjusted_seniority_date",
+            "rehire_date",
+            "employment_term_date",
+            "pay_rate_effective_date",
+            "benefit_class_effective_date",
+            "benefit_salary_effective_date",
+            "benefit_termination_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "employee_id",
+            "paylocity_company_code",
+            "cost_center_1"
+        ]
+    },
+    "greco_covid_testing_history_report": {
+        "columns": [
+            "employee_id",
+            "count_of_company_code",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "count_of_work_location_name",
+            "maximum_of_covid_test_date",
+            "count_of_positive"
+        ],
+        "exact_match": [
+            "employee_id",
+            "count_of_company_code"
+        ],
+        "timestamp": [
+            "maximum_of_covid_test_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "employee_id",
+            "count_of_company_code"
+        ]
+    },
+    "greco_covid_testing_status_report": {
+        "columns": [
+            "work_location_name",
+            "positive",
+            "count_of_company_code",
+            "count_of_employee_id",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "maximum_of_most_recent_covid_test_date"
+        ],
+        "exact_match": [
+            "work_location_name",
+            "count_of_company_code",
+            "count_of_employee_id"
+        ],
+        "timestamp": [
+            "maximum_of_most_recent_covid_test_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "work_location_name",
+            "count_of_company_code",
+            "count_of_employee_id"
+        ]
+    },
+    "greco_covid_vaccination_status_report": {
+        "columns": [
+            "work_location_name",
+            "current_vaccination_status",
+            "count_of_company_code",
+            "count_of_employee_id",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "count_of_excluded",
+            "count_of_exclusion_reason",
+            "count_of_accommodation",
+            "count_of_accommodation_reason",
+            "maximum_of_covid_vaccine_first_dose_date",
+            "maximum_of_covid_vaccine_second_dose_date",
+            "maximum_of_most_recent_covid_vaccination_date"
+        ],
+        "exact_match": [
+            "count_of_company_code",
+            "count_of_employee_id"
+        ],
+        "timestamp": [
+            "maximum_of_covid_vaccine_first_dose_date",
+            "maximum_of_covid_vaccine_second_dose_date",
+            "maximum_of_most_recent_covid_vaccination_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "count_of_company_code",
+            "count_of_employee_id"
+        ]
+    },
+    "greco_employee_listing_report": {
+        "columns": [
+            "employee",
+            "id",
+            "ssn",
+            "emp_status",
+            "emp_type",
+            "sui",
+            "pay_freq",
+            "rate_salary",
+            "rate_per"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_employee_rates_and_hire_dates_report": {
+        "columns": [
+            "company_id",
+            "department",
+            "last_first_mi",
+            "hire_date",
+            "rehire_date",
+            "hourly_rate",
+            "salary"
+        ],
+        "exact_match": [
+            "company_id"
+        ],
+        "timestamp": [
+            "hire_date",
+            "rehire_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "company_id"
+        ]
+    },
+    "greco_i9_tracking_report": {
+        "columns": [
+            "last_name",
+            "first_name",
+            "id",
+            "work_authorization_status",
+            "uscis_number",
+            "work_authorization_type",
+            "expiration"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_incomplete_training_by_employee_report": {
+        "columns": [
+            "employee_id",
+            "count_of_company_code",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "count_of_training_title",
+            "count_of_training_type",
+            "count_of_training_status",
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_first_accessed",
+            "maximum_of_last_accessed",
+            "maximum_of_due_date",
+            "maximum_of_updated_on",
+            "summation_of_duration_minutes",
+            "summation_of_total_time_seconds",
+            "count_of_category_1",
+            "count_of_category_2",
+            "count_of_category_3",
+            "count_of_category_4",
+            "count_of_category_5"
+        ],
+        "exact_match": [
+            "employee_id",
+            "count_of_company_code"
+        ],
+        "timestamp": [
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_due_date",
+            "maximum_of_updated_on"
+        ],
+        "date_range": [],
+        "ints": [
+            "employee_id",
+            "count_of_company_code"
+        ]
+    },
+    "greco_incomplete_training_by_training_title_report": {
+        "columns": [
+            "employee_id",
+            "count_of_company_code",
+            "count_of_last_name",
+            "count_of_preferred_or_first_name",
+            "count_of_department_description",
+            "count_of_training_title",
+            "count_of_training_type",
+            "count_of_training_status",
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_first_accessed",
+            "maximum_of_last_accessed",
+            "maximum_of_due_date",
+            "maximum_of_updated_on",
+            "summation_of_duration_minutes",
+            "summation_of_total_time_seconds",
+            "count_of_category_1",
+            "count_of_category_2",
+            "count_of_category_3",
+            "count_of_category_4",
+            "count_of_category_5"
+        ],
+        "exact_match": [
+            "count_of_last_name",
+            "count_of_preferred_or_first_name"
+        ],
+        "timestamp": [
+            "maximum_of_assignment_date",
+            "maximum_of_session_date",
+            "maximum_of_due_date",
+            "maximum_of_updated_on"
+        ],
+        "date_range": [],
+        "ints": [
+            "count_of_last_name",
+            "count_of_preferred_or_first_name"
+        ]
+    },
+    "greco_new_hire_report": {
+        "columns": [
+            "id",
+            "employee",
+            "ssn",
+            "hire_date",
+            "change_reason",
+            "term_date",
+            "emp_status"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [
+            "hire_date",
+            "term_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_new_hire_term_report": {
+        "columns": [
+            "id",
+            "employee",
+            "ssn",
+            "hire_date",
+            "term_reason",
+            "term_date",
+            "emp_status"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [
+            "hire_date",
+            "term_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_retirement_plan_participation_report": {
+        "columns": [
+            "name",
+            "id",
+            "401k_rate_amount",
+            "401k_calc",
+            "401k_ytd_amount",
+            "401cu_rate_amount",
+            "401cu_calc",
+            "401cu_ytd_amount",
+            "4roth_rate_amount",
+            "4roth_calc",
+            "4roth_ytd_amount",
+            "403b_rate_amount",
+            "403b_calc",
+            "403b_ytd_amount"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_seniority_report": {
+        "columns": [
+            "id",
+            "employee",
+            "hire_date",
+            "rehire_date",
+            "adj_seniority",
+            "seniority"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [
+            "hire_date",
+            "rehire_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_union_report": {
+        "columns": [
+            "id",
+            "employee",
+            "ssn",
+            "affiliation_date",
+            "union_position",
+            "initiation_collected",
+            "dues_collected"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [
+            "affiliation_date"
+        ],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    },
+    "greco_year_to_date_report": {
+        "columns": [
+            "id",
+            "employee",
+            "ssn",
+            "salary",
+            "rate",
+            "pay_frequency",
+            "ytd_bonus_amount",
+            "ytd_comm_amount",
+            "ytd_hol_amount",
+            "ytd_ot_amount",
+            "ytd_reg_amount",
+            "ytd_sick_amount",
+            "ytd_vac_amount",
+            "ytd_401k_amount",
+            "ytd_dentl_amount",
+            "ytd_garn_amount",
+            "ytd_hlth_amount",
+            "ytd_levy_amount",
+            "ytd_ltd_amount",
+            "ytd_std_amount",
+            "ytd_fitw_amount",
+            "ytd_il_amount",
+            "ytd_ilsui_amount",
+            "ytd_med_amount",
+            "ytd_med_r_amount",
+            "ytd_ss_amount",
+            "ytd_ss_r_amount",
+            "ytd_gross_amount",
+            "ytd_net_amount"
+        ],
+        "exact_match": [
+            "id"
+        ],
+        "timestamp": [],
+        "date_range": [],
+        "ints": [
+            "id"
+        ]
+    }
+}

@@ -1,0 +1,72 @@
+service: fn-sf-fetch-greco-api
+provider:
+  name: aws
+  runtime: python3.7
+  versionFunctions: false
+  deploymentBucket: successfactors-serverless-${self:provider.stage}
+  stage: ${opt:stage, 'dev'}
+  vpc:
+    securityGroupIds:
+      - ${ssm:SuccessFactors_Lambda_SG}
+    subnetIds:
+      - ${ssm:SUBNET1}
+      - ${ssm:SUBNET2}
+      - ${ssm:SUBNET3}
+  region: us-east-1
+  tags: ${self:custom.tags}
+  stackTags: ${self:custom.tags}
+package:
+  exclude:
+    - .idea/**
+    - node_modules/**
+    - .vscode/**
+    - _pycache_/**
+    - .gitignore
+    - test/**
+    - venv/**
+    - test.py
+    - response.json
+    - table_meta_data.json
+    - dict_creator.py
+    - test.log
+functions:
+  fn_sf_fetch_greco_api:
+    name: fn_sf_fetch_greco_api_${self:provider.stage}
+    handler: index.lambda_handler
+    events:
+      - alb:
+          targetGroupPrefix: sf_fetch_greco
+          listenerArn: ${ssm:/${self:provider.stage}/successfactors/alb_arn}
+          priority: 23
+          conditions:
+            path: /mna/search_greco_data
+      - alb:
+          targetGroupPrefix: sf_fetch_greco
+          listenerArn: ${ssm:/${self:provider.stage}/successfactors/alb_arn}
+          priority: 24
+          conditions:
+            path: /mna/export_greco_file
+    layers:
+      - ${ssm:/${self:provider.stage}/successfactors/python_pkgs_layer}
+    description: Lambda to fetch greco data from SuccessFactors Archive
+    memorySize: 1600
+    timeout: 120
+    role: ${ssm:/${self:provider.stage}/successfactors/lambda_role}
+    environment:
+      bucket_name: successfactors-serverless-${self:provider.stage}
+      region_name: ${self:provider.region}
+      athena_database: ${ssm:/${self:provider.stage}/successfactors/ma_companies/athena_database}
+      s3_bucket_name: ${ssm:/${self:provider.stage}/successfactors/ma_companies/s3_bucket_name}
+      athena_output_folder: ${ssm:/${self:provider.stage}/successfactors/ma_companies/athena_output_folder}
+custom:
+  env:
+      dev: NONPROD
+      prod: PROD
+      qa: NONPROD
+      stage: STG
+  tags:
+    Technical:ApplicationID: APP-004200
+    Technical:ApplicationName: SuccessFactors Archive
+    Technical:Environment: ${self:custom.env.${opt:stage}}
+    Technical:PlatformOwner: sf_archive@sysco.com
+    Technical:PatchingOwner: 2WMCS
